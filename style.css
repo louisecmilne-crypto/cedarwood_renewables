@@ -380,7 +380,7 @@ body {
     position: relative;
     /* ADD THIS */
 
-    color: #48683f;
+    color: #5b7354;
     font-size: 2rem;
     line-height: 1.15;
     font-family: 'Cormorant Garamond', serif;
@@ -407,9 +407,15 @@ body {
     );
 }
 
+.service-card:hover h3 {
+    color: #6f8b67;
+    transition: 0.3s ease;
+}
+
 .service-card p {
     color: #BFC7B7;
     line-height: 1.8;
+    backdrop-filter: blur(12px);
 }
 
 /* SERVICES SWEEP */
