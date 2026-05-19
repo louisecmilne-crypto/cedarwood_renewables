@@ -310,13 +310,24 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 18px;
+    margin-top: 60px;
+}
 
-    gap: 22px;
+.service-card {
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 14px;
+    padding: 35px 20px;
+    transition: all 0.3s ease;
+    min-height: 300px;
+}
 
-    max-width: 1400px;
-    margin: auto;
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212,175,55,0.5);
+    box-shadow: 0 0 30px rgba(212,175,55,0.12);
 }
 
 .service-card {
