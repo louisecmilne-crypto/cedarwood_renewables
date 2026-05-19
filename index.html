@@ -36,21 +36,6 @@
 
     </header>
 
-    <!-- GOLD SWEEP -->
-    <div class="gold-sweep">
-    <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
-        <path
-    d="M0,105
-       C260,140 500,75 760,105
-       C980,130 1180,120 1440,95"
-    fill="none"
-    stroke="#D4AF37"
-    stroke-width="5"
-    stroke-linecap="round"
-/>
-    </svg>
-</div>
-
     <!-- HERO -->
     <section class="hero">
 
@@ -90,8 +75,50 @@
             </div>
 
         </div>
+</div>
 
-    </section>  
+<div class="hero-sweep">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8d6b12"/>
+                <stop offset="25%" stop-color="#d4af37"/>
+                <stop offset="50%" stop-color="#fff3b0"/>
+                <stop offset="75%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#8d6b12"/>
+            </linearGradient>
+
+            <filter id="goldGlow">
+                <feGaussianBlur stdDeviation="6" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Glow underneath -->
+        <path
+            d="M0,140 C220,220 500,70 760,135 C980,190 1200,180 1440,110"
+            fill="none"
+            stroke="#D4AF37"
+            stroke-width="10"
+            opacity="0.18"
+            filter="url(#goldGlow)"
+        />
+
+        <!-- Main luxury line -->
+        <path
+            d="M0,140 C220,220 500,70 760,135 C980,190 1200,180 1440,110"
+            fill="none"
+            stroke="url(#goldLine)"
+            stroke-width="4"
+            stroke-linecap="round"
+        />
+    </svg>
+</div>
+
+</section> 
 
 </body>
 </html>
