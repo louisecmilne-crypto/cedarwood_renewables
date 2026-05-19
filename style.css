@@ -241,23 +241,21 @@ body {
         gap: 25px;
     }
 }
-.gold-wave {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
+.gold-divider {
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+    z-index: 50;
+}
 
-    transform: translateX(-50%);
+.gold-divider svg {
+    width: 100%;
+    height: 140px;
+    display: block;
 
-    width: 120%;
-    height: 120px;
-
-    border-bottom:
-        3px solid rgba(212,175,55,0.95);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 35px rgba(212,175,55,0.6);
-
-    opacity: 0.95;
+    filter:
+        drop-shadow(
+            0 0 14px
+            rgba(212,175,55,0.8)
+        );
 }
