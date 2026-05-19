@@ -456,3 +456,34 @@ body {
 
     opacity: 0.95;
 }
+
+/* LUXURY GOLD LINE ANIMATION */
+
+.services-line {
+    stroke-dasharray: 2200;
+    stroke-dashoffset: 2200;
+
+    animation:
+        drawLine 2.8s ease forwards,
+        shimmer 8s ease-in-out infinite;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        filter:
+            drop-shadow(0 0 5px rgba(255,220,120,0.45))
+            drop-shadow(0 0 18px rgba(212,175,55,0.30));
+    }
+
+    50% {
+        filter:
+            drop-shadow(0 0 10px rgba(255,220,120,0.75))
+            drop-shadow(0 0 30px rgba(212,175,55,0.45));
+    }
+}
