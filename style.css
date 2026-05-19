@@ -93,6 +93,8 @@ body {
 .hero {
     position: relative;
     overflow: visible;
+    padding-bottom: 140px;
+
     background:
         linear-gradient(
             90deg,
@@ -241,25 +243,21 @@ body {
 }
 .gold-wave {
     position: absolute;
-    bottom: -70px;
+    bottom: -20px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 140%;
-    height: 220px;
+    width: 120%;
+    height: 120px;
 
-    background:
-        radial-gradient(
-            ellipse at center,
-            rgba(212,175,55,0.95) 0%,
-            rgba(212,175,55,0.45) 15%,
-            rgba(212,175,55,0.15) 35%,
-            transparent 72%
-        );
+    border-bottom:
+        3px solid rgba(212,175,55,0.95);
 
-    opacity: 0.9;
-    filter: blur(38px);
+    border-radius: 50%;
 
-    pointer-events: none;
+    box-shadow:
+        0 0 35px rgba(212,175,55,0.6);
+
+    opacity: 0.95;
 }
