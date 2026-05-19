@@ -386,13 +386,17 @@ body {
 }
 
 .service-card h3 {
+    position: relative;
+
     color: #48683f;
     font-size: 2rem;
     line-height: 1.15;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: 0.3px;
+
     margin-bottom: 18px;
+    padding-bottom: 14px;
 }
 
 .service-card h3::after {
