@@ -363,12 +363,10 @@ body {
 }
 
 .service-card h3 {
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
     font-size: 2rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    color: #58713a;
+    line-height: 1.2;
 }
 
 .service-card p {
@@ -410,4 +408,12 @@ body {
     stroke-width: 18;
     opacity: 0.18;
     filter: blur(14px);
+}
+
+.service-icon {
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 22px;
+    display: block;
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.25));
 }
