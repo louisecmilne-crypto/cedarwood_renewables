@@ -152,19 +152,40 @@ body {
 }
 
 .gold-btn {
-    display: inline-block;
-    background: linear-gradient(
-        to bottom,
-        #e2bb4c,
-        #c99822
-    );
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
-    color: black;
+    background:
+        linear-gradient(
+            135deg,
+            #b88918 0%,
+            #d4af37 40%,
+            #f2d46b 50%,
+            #d4af37 65%,
+            #b88918 100%
+        );
+
+    color: #050B14;
     text-decoration: none;
 
-    padding: 18px 34px;
-    border-radius: 8px;
+    padding: 20px 42px;
+    border-radius: 12px;
+
     font-weight: 600;
+    font-size: 1rem;
+
+    box-shadow:
+        0 8px 25px rgba(212,175,55,0.18),
+        inset 0 1px 1px rgba(255,255,255,0.2);
+
+    transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 14px 35px rgba(212,175,55,0.28);
 }
 
 .hero-image-card {
