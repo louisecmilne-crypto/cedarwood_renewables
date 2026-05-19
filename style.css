@@ -316,44 +316,28 @@ body {
 }
 
 .service-card {
-    background: rgba(10, 10, 10, 0.9);
-    border: 1px solid rgba(212,175,55,0.2);
-    border-radius: 14px;
-    padding: 35px 20px;
-    transition: all 0.3s ease;
-    min-height: 300px;
+    background: linear-gradient(
+        180deg,
+        rgba(12,12,12,0.96),
+        rgba(5,5,5,0.98)
+    );
+
+    border: 1px solid rgba(212,175,55,0.15);
+    border-radius: 16px;
+
+    padding: 40px 28px;
+    min-height: 420px;
+
+    transition: all 0.35s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(212,175,55,0.5);
-    box-shadow: 0 0 30px rgba(212,175,55,0.12);
-}
-
-.service-card {
-    background:
-        rgba(255,255,255,0.02);
-
-    border:
-        1px solid
-        rgba(212,175,55,0.18);
-
-    padding: 38px 28px;
-    border-radius: 22px;
-
-    transition: 0.3s ease;
-}
-
-.service-card:hover {
-    transform:
-        translateY(-6px);
-
-    border-color:
-        rgba(212,175,55,0.4);
+    transform: translateY(-8px);
+    border-color: rgba(212,175,55,0.35);
 
     box-shadow:
-        0 0 35px
-        rgba(212,175,55,0.08);
+        0 0 30px rgba(212,175,55,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.03);
 }
 
 .service-icon {
@@ -363,10 +347,12 @@ body {
 }
 
 .service-card h3 {
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    margin-bottom: 20px;
+    line-height: 1.15;
+    margin-bottom: 18px;
     color: #58713a;
-    line-height: 1.2;
+    font-weight: 600;
 }
 
 .service-card p {
