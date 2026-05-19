@@ -460,12 +460,18 @@ body {
 /* LUXURY GOLD LINE ANIMATION */
 
 .services-line {
+    stroke-width: 3;
+
+    filter:
+        drop-shadow(0 0 6px rgba(255,220,120,0.55))
+        drop-shadow(0 0 20px rgba(212,175,55,0.35));
+
     stroke-dasharray: 2200;
     stroke-dashoffset: 2200;
 
     animation:
-        drawLine 2.8s ease forwards,
-        shimmer 8s ease-in-out infinite;
+        drawLine 2.2s ease forwards,
+        luxuryGlow 4s ease-in-out infinite;
 }
 
 @keyframes drawLine {
@@ -474,16 +480,19 @@ body {
     }
 }
 
-@keyframes shimmer {
+@keyframes luxuryGlow {
     0%, 100% {
+        opacity: 0.92;
+        transform: translateY(0px);
         filter:
-            drop-shadow(0 0 5px rgba(255,220,120,0.45))
-            drop-shadow(0 0 18px rgba(212,175,55,0.30));
+            drop-shadow(0 0 5px rgba(255,220,120,0.4))
+            drop-shadow(0 0 15px rgba(212,175,55,0.25));
     }
 
     50% {
+        opacity: 1;
         filter:
-            drop-shadow(0 0 10px rgba(255,220,120,0.75))
-            drop-shadow(0 0 30px rgba(212,175,55,0.45));
+            drop-shadow(0 0 14px rgba(255,220,120,0.85))
+            drop-shadow(0 0 35px rgba(212,175,55,0.55));
     }
 }
