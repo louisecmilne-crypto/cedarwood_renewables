@@ -172,10 +172,26 @@ body {
 /* GOLD SWEEP */
 
 .gold-sweep {
-    background: #050709;
     position: relative;
-    margin-top: -30px;
-    z-index: 20;
+    margin-top: -90px;
+    z-index: 9999;
+
+    width: 100%;
+    overflow: visible;
+}
+
+.gold-sweep svg {
+    width: 100%;
+    height: 170px;
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 0 25px
+            rgba(212,175,55,1)
+        );
+
+    overflow: visible;
 }
 
 .gold-sweep svg {
