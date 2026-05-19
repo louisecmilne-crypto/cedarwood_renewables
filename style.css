@@ -391,20 +391,6 @@ body {
     padding-bottom: 14px;
 }
 
-.service-card h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 50px;
-    height: 2px;
-
-    background: linear-gradient(90deg,
-            #d4af37,
-            rgba(212, 175, 55, 0.1));
-}
-
 .service-card p {
     color: #BFC7B7;
     line-height: 1.8;
