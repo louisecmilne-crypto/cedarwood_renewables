@@ -18,15 +18,20 @@ body {
 /* HEADER */
 
 .header {
-    background: linear-gradient(
-        to bottom,
-        #020406,
-        #07120F
-    );
+    background:
+        linear-gradient(
+            to bottom,
+            #010203,
+            #06100d
+        );
 
-    padding: 30px 8%;
+    padding: 20px 8% 10px;
     text-align: center;
-    border-bottom: 1px solid rgba(212,175,55,0.2);
+    border-bottom:
+        1px solid rgba(212,175,55,0.18);
+
+    position: relative;
+    z-index: 100;
 }
 
 .logo-container {
@@ -34,17 +39,27 @@ body {
 }
 
 .logo {
-    width: 380px;
-    max-width: 90%;
+    width: 500px;
+    max-width: 95%;
+
+    filter:
+        drop-shadow(
+            0 0 25px
+            rgba(212,175,55,0.12)
+        );
+
+    transition: 0.3s ease;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-bottom: 30px;
+    gap: 55px;
+    margin-top: -8px;
+    margin-bottom: 22px;
     flex-wrap: wrap;
 }
+
 
 .nav a {
     color: #D4AF37;
@@ -102,14 +117,17 @@ body {
     z-index: 2;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 70px;
 
     align-items: center;
 
-    max-width: 1450px;
+    max-width: 1500px;
     margin: auto;
-    padding: 80px 8%;
+
+    padding:
+        40px 8%
+        100px;
 }
 
 .hero-left h1 {
@@ -117,7 +135,7 @@ body {
         'Cormorant Garamond',
         serif;
 
-    font-size: 5rem;
+    font-size: 4.3rem;
     line-height: 0.95;
     font-weight: 600;
     margin-bottom: 30px;
@@ -167,10 +185,22 @@ body {
 }
 
 .hero-image-card {
-    border-radius: 34px;
+    border-radius: 38px;
     overflow: hidden;
+
     box-shadow:
-        0 0 60px rgba(212,175,55,0.08);
+        0 0 80px
+        rgba(212,175,55,0.08);
+
+    transform:
+        translateX(30px);
+}
+
+.hero-image-card img {
+    width: 100%;
+    display: block;
+    min-height: 650px;
+    object-fit: cover;
 }
 
 .hero-image-card img {
@@ -208,4 +238,23 @@ body {
     .nav {
         gap: 25px;
     }
+}
+.gold-wave {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+
+    width: 100%;
+    height: 160px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(212,175,55,0.95) 0%,
+            rgba(212,175,55,0.25) 22%,
+            transparent 70%
+        );
+
+    opacity: 0.4;
+    filter: blur(30px);
 }
