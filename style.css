@@ -278,7 +278,7 @@ body {
    .hero-sweep {
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -18px;
     width: 100%;
     z-index: 3;
     pointer-events: none;
@@ -293,19 +293,18 @@ body {
 
 /* Gold line */
 .hero-sweep path.main-line {
-     stroke-linecap: round;
     stroke-width: 5;
     opacity: 1;
     filter:
-        drop-shadow(0 0 6px rgba(212,175,55,0.8))
-        drop-shadow(0 0 18px rgba(212,175,55,0.5));
+        drop-shadow(0 0 8px rgba(212,175,55,0.9))
+        drop-shadow(0 0 22px rgba(255,220,120,0.45));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 30;
-    opacity: 0.22;
-    filter: blur(16px);
+    stroke-width: 34;
+    opacity: 0.26;
+    filter: blur(18px);
 }
 }
 
