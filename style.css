@@ -303,9 +303,9 @@ body {
 
 /* Soft glow */
 .hero-sweep path.glow-line {
-    stroke-width: 24;
-    opacity: 0.16;
-    filter: blur(14px);
+    stroke-width: 34;
+    opacity: 0.22;
+    filter: blur(16px);
 }
 }
 
