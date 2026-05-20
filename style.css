@@ -304,8 +304,10 @@ body {
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
     stroke-width: 34;
-    opacity: 0.22;
-    filter: blur(18px);
+    opacity: 1;
+     filter:
+        blur(18px)
+        drop-shadow(0 0 20px rgba(255,235,160,0.45));
 }
 }
 
