@@ -237,6 +237,13 @@ body {
     line-height: 1.7;
 }
 
+.section-heading h2 {
+    font-size: 1.55rem;
+    line-height: 1.15;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+
     .nav {
         gap: 25px;
     }
@@ -248,13 +255,6 @@ body {
 
 .hero-image {
     margin-top: 10px;
-}
-
-.section-heading h2 {
-    font-size: 2rem;
-    line-height: 1.15;
-    max-width: 100%;
-    margin: 0 auto 24px;
 }
 
 .section-heading {
