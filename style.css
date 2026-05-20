@@ -215,8 +215,8 @@ body {
     }
 
     .hero-image-card {
-    height: 420px;
-    margin-bottom: -10px;
+    height: 500px;
+    margin-bottom: -30px;
     }
 
     .header-btn {
@@ -284,6 +284,7 @@ body {
 
 /* Gold line */
 .hero-sweep path.main-line {
+     stroke-linecap: round;
     stroke-width: 5;
     opacity: 1;
     filter:
