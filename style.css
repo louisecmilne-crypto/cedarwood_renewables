@@ -274,13 +274,19 @@ body {
     margin-top: -20px;
     }
 
-    .hero-sweep {
-    bottom: -28px;
+   .hero-sweep {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    bottom: -20px;
     }
 
-    .hero-sweep svg {
-    height: 175px;
-    }
+.hero-sweep svg {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
 
 /* Gold line */
 .hero-sweep path.main-line {
