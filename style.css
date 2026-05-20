@@ -286,9 +286,11 @@ body {
 
 .hero-sweep svg {
     width: 100%;
-    height: 130px;
+    height: 175px;
     display: block;
     overflow: visible;
+    transform: scaleX(1.1) scaleY(1.15);
+    transform-origin: center;
 }
 
 /* Gold line */
