@@ -211,12 +211,12 @@ body {
 @media (max-width: 1000px) {
 
     .hero {
-    padding: 20px 0 40px;
+    padding: 20px 0 0;
     }
 
     .hero-image-card {
     height: 420px;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
     }
 
     .header-btn {
@@ -270,32 +270,33 @@ body {
     }
 
     .services {
-    padding: 0px 5% 100px;
-    margin-top: -60px;
+    padding: 40px 5% 100px;
+    margin-top: -20px;
     }
 
     .hero-sweep {
-    bottom: -45px;
+    bottom: -28px;
     }
 
     .hero-sweep svg {
-    height: 160px;
-}
+    height: 175px;
+    }
 
 /* Gold line */
 .hero-sweep path.main-line {
-    stroke-width: 4.5;
+    stroke-width: 5;
     opacity: 1;
     filter:
-        drop-shadow(0 0 5px rgba(212, 175, 55, 0.75))
-        drop-shadow(0 0 16px rgba(212, 175, 55, 0.45));
+        drop-shadow(0 0 6px rgba(212,175,55,0.8))
+        drop-shadow(0 0 18px rgba(212,175,55,0.5));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 26;
-    opacity: 0.18;
-    filter: blur(14px);
+    stroke-width: 30;
+    opacity: 0.22;
+    filter: blur(16px);
+}
 }
 
 /* =========================
