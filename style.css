@@ -211,6 +211,7 @@ body {
 @media (max-width: 1000px) {
 
     .hero {
+    overflow: hidden;
     padding: 20px 0 0;
     }
 
@@ -277,9 +278,9 @@ body {
    .hero-sweep {
     position: absolute;
     left: 0;
+    bottom: -18px;
     width: 100%;
     overflow: hidden;
-    bottom: -20px;
     }
 
 .hero-sweep svg {
