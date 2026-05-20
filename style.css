@@ -229,6 +229,10 @@ body {
         font-size: 3rem;
     }
 
+    .hero-left p {
+    color: #48683f;
+}
+
     .nav {
         gap: 25px;
     }
