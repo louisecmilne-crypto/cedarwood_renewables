@@ -222,15 +222,19 @@ body {
     }
 
     .hero-left {
-        padding: 60px 30px;
-    }
+    padding: 35px 30px 20px;
+}
 
     .hero-left h1 {
-        font-size: 3rem;
-    }
+    font-size: 3rem;
+    line-height: 1.02;
+    margin-bottom: 18px;
+}
 
     .hero-left p {
     color: #48683f;
+    margin-bottom: 28px;
+    line-height: 1.7;
 }
 
     .nav {
@@ -240,6 +244,10 @@ body {
     .logo {
         width: 280px;
     }
+}
+
+.hero-image {
+    margin-top: 10px;
 }
 
 .hero-sweep {
