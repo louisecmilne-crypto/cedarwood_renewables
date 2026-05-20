@@ -212,7 +212,12 @@ body {
 
     .hero {
     padding: 20px 0 40px;
-}
+    }
+
+    .hero-image-card {
+    height: 420px;
+    margin-bottom: -30px;
+    }
 
     .header-btn {
         position: static;
@@ -269,10 +274,10 @@ body {
     }
 
     .hero-sweep {
-    bottom: 0px;
-}
+    bottom: -8px;
+    }
 
-.hero-sweep svg {
+    .hero-sweep svg {
     height: 100px;
 }
 
