@@ -326,9 +326,17 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .services-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        line-height: 1.05;
+        letter-spacing: -1px;
+    }
+
 }
 
 .service-card {
@@ -587,14 +595,20 @@ body {
 
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
-    .about-container {
-        grid-template-columns: 1fr;
+    .service-card {
+        min-height: auto;
+        padding: 28px 24px;
     }
 
-    .about-content h2 {
-        font-size: 3rem;
+    .service-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.7;
     }
 }
 
