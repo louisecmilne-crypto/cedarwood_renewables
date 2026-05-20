@@ -263,13 +263,21 @@ body {
     .services {
         padding: 0px 5% 120px;
     }
+
+    .hero-sweep {
+    bottom: -35px;
+}
+
+.hero-sweep svg {
+    height: 100px;
 }
 
 /* Gold line */
 .hero-sweep path.main-line {
     stroke-width: 4;
     filter:
-        drop-shadow(0 0 4px rgba(255, 220, 120, 0.6)) drop-shadow(0 0 14px rgba(212, 175, 55, 0.45));
+      drop-shadow(0 0 4px rgba(212, 175, 55, 0.55))
+      drop-shadow(0 0 12px rgba(212, 175, 55, 0.35));
 }
 
 /* Bright luxury glow */
