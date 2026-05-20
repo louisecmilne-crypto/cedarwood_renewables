@@ -279,23 +279,22 @@ body {
     }
 
     .hero-sweep svg {
-    height: 100px;
+    height: 130px;
 }
 
 /* Gold line */
 .hero-sweep path.main-line {
-    stroke: #D4AF37;
-    stroke-width: 4;
+    stroke-width: 5;
     filter:
-        drop-shadow(0 0 4px rgba(212, 175, 55, 0.55))
-        drop-shadow(0 0 12px rgba(212, 175, 55, 0.35));
+        drop-shadow(0 0 8px rgba(212, 175, 55, 0.75))
+        drop-shadow(0 0 22px rgba(212, 175, 55, 0.55));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 24;
-    opacity: 0.22;
-    filter: blur(16px);
+    stroke-width: 32;
+    opacity: 0.38;
+    filter: blur(22px);
 }
 
 /* =========================
