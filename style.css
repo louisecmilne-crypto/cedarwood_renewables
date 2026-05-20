@@ -297,15 +297,15 @@ body {
     opacity: 1;
     stroke-linecap: round;
     filter:
-        drop-shadow(0 0 10px rgba(255,220,120,0.95))
-        drop-shadow(0 0 28px rgba(212,175,55,0.65));
+        drop-shadow(0 0 10px rgba(255,235,160,0.95))
+        drop-shadow(0 0 28px rgba(212,175,55,0.55));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 38;
-    opacity: 0.28;
-    filter: blur(20px);
+    stroke-width: 34;
+    opacity: 0.22;
+    filter: blur(18px);
 }
 }
 
