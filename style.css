@@ -250,6 +250,12 @@ body {
     margin-top: 10px;
 }
 
+.services-title {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 40px;
+}
+
 .hero-sweep {
     position: absolute;
     left: 0;
