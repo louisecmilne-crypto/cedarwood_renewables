@@ -278,36 +278,34 @@ body {
    .hero-sweep {
     position: absolute;
     left: 0;
-    bottom: -90px;
+    bottom: -95px;
     width: 100%;
     z-index: 3;
     pointer-events: none;
-    }
+}
 
-.hero-sweep svg {
+   .hero-sweep svg {
     width: 100%;
-    height: 175px;
+    height: 180px;
     display: block;
     overflow: visible;
 }
 
-/* Gold line */
+/* Main gold line */
 .hero-sweep path.main-line {
-    stroke-width: 4.2;
+    stroke-width: 4;
     opacity: 1;
     stroke-linecap: round;
     filter:
-        drop-shadow(0 0 4px rgba(255,245,200,0.75))
-        drop-shadow(0 0 14px rgba(212,175,55,0.25));
+        drop-shadow(0 0 6px rgba(255,245,210,0.95))
+        drop-shadow(0 0 20px rgba(212,175,55,0.45));
 }
 
-/* Bright luxury glow */
+/* Soft glow */
 .hero-sweep path.glow-line {
-    stroke-width: 28;
-    opacity: 1;
-    filter:
-        blur(14px)
-        drop-shadow(0 0 14px rgba(255,235,160,0.35));
+    stroke-width: 24;
+    opacity: 0.16;
+    filter: blur(14px);
 }
 }
 
