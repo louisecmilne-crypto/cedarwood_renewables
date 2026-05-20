@@ -278,7 +278,7 @@ body {
    .hero-sweep {
     position: absolute;
     left: 0;
-    bottom: -40px;
+    bottom: -65px;
     width: 100%;
     z-index: 3;
     pointer-events: none;
@@ -289,8 +289,6 @@ body {
     height: 175px;
     display: block;
     overflow: visible;
-    transform: scaleX(1.1) scaleY(1.15);
-    transform-origin: center;
 }
 
 /* Gold line */
