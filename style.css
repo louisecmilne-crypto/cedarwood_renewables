@@ -293,21 +293,21 @@ body {
 
 /* Gold line */
 .hero-sweep path.main-line {
-    stroke-width: 4;
+    stroke-width: 4.2;
     opacity: 1;
     stroke-linecap: round;
     filter:
-       drop-shadow(0 0 6px rgba(255,245,200,0.95))
-       drop-shadow(0 0 18px rgba(212,175,55,0.35));
+        drop-shadow(0 0 4px rgba(255,245,200,0.75))
+        drop-shadow(0 0 14px rgba(212,175,55,0.25));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 34;
+    stroke-width: 28;
     opacity: 1;
-     filter:
-        blur(18px)
-        drop-shadow(0 0 20px rgba(255,235,160,0.45));
+    filter:
+        blur(14px)
+        drop-shadow(0 0 14px rgba(255,235,160,0.35));
 }
 }
 
