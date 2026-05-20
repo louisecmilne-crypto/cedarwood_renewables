@@ -100,8 +100,8 @@ body {
 
     background:
         linear-gradient(90deg,
-            rgba(0, 0, 0, 0.95) 0%,
-            rgba(0, 0, 0, 0.85) 45%,
+            rgba(0, 0, 0, 0.82) 0%,
+            rgba(0, 0, 0, 0.72) 45%,
             rgba(0, 0, 0, 0.2) 100%);
     z-index: 2;
 }
@@ -270,7 +270,8 @@ body {
     }
 
     .services {
-        padding: 0px 5% 120px;
+    padding: 0px 5% 100px;
+    margin-top: -60px;
     }
 
     .hero-sweep {
