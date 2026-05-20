@@ -284,17 +284,17 @@ body {
 
 /* Gold line */
 .hero-sweep path.main-line {
-    stroke-width: 5;
+    stroke-width: 4;
     filter:
-        drop-shadow(0 0 8px rgba(212, 175, 55, 0.75))
-        drop-shadow(0 0 22px rgba(212, 175, 55, 0.55));
+        drop-shadow(0 0 4px rgba(212, 175, 55, 0.65))
+        drop-shadow(0 0 12px rgba(212, 175, 55, 0.35));
 }
 
 /* Bright luxury glow */
 .hero-sweep path.glow-line {
-    stroke-width: 32;
-    opacity: 0.38;
-    filter: blur(22px);
+    stroke-width: 20;
+    opacity: 0.16;
+    filter: blur(12px);
 }
 
 /* =========================
