@@ -82,50 +82,53 @@
     <!-- GOLD SWEEP -->
     <div class="hero-sweep">
 
-        <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+    <svg viewBox="0 0 1440 180"
+         preserveAspectRatio="none">
 
-            <defs>
+        <defs>
 
-                <linearGradient id="goldLine"
-                    x1="0%" y1="0%"
-                    x2="100%" y2="0%">
+            <linearGradient
+                id="heroGold"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%">
 
-                    <stop offset="0%" stop-color="#7a5b11"/>
-                    <stop offset="15%" stop-color="#c79a1f"/>
-                    <stop offset="35%" stop-color="#fff2b2"/>
-                    <stop offset="50%" stop-color="#fffbe6"/>
-                    <stop offset="65%" stop-color="#f5d76e"/>
-                    <stop offset="85%" stop-color="#c9971a"/>
-                    <stop offset="100%" stop-color="#6e520c"/>
-                    
-                </linearGradient>
+                <stop offset="0%"
+                      stop-color="#8d6b12"/>
 
-            </defs>
+                <stop offset="50%"
+                      stop-color="#d4af37"/>
 
-            <!-- glow -->
-<path
-    class="glow-line"
-    d="M0,155
-       C240,190 500,95 760,135
-       C980,170 1160,175 1440,135"
-    fill="none"
-    stroke="url(#goldLine)"
-/>
+                <stop offset="100%"
+                      stop-color="#8d6b12"/>
 
-<!-- main line -->
-<path
-    class="main-line"
-    d="M0,155
-       C240,190 500,95 760,135
-       C980,170 1160,175 1440,135"
-    fill="none"
-    stroke="url(#goldLine)"
-    stroke-linecap="round"
-/>
+            </linearGradient>
 
-        </svg>
+        </defs>
 
-    </div>
+        <path
+            class="hero-glow"
+            d="M0,90
+               C220,150 420,30 700,85
+               C980,140 1180,110 1440,60"
+            fill="none"
+            stroke="url(#heroGold)"
+        />
+
+        <path
+            class="hero-line"
+            d="M0,90
+               C220,150 420,30 700,85
+               C980,140 1180,110 1440,60"
+            fill="none"
+            stroke="url(#heroGold)"
+            stroke-linecap="round"
+        />
+
+    </svg>
+
+</div>
 
 </section>
 
