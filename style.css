@@ -938,7 +938,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    padding: 70px 6%;
+    padding: 55px 6%;
     border-top: 1px solid rgba(212,175,55,0.15);
 }
 
@@ -969,7 +969,7 @@ body {
 }
 
 .survey-footer img {
-    width: 240px;
+    width: 200px;
 }
 
 .footer-text {
@@ -979,9 +979,32 @@ body {
     letter-spacing: 1px;
 }
 
+/* SURVEY GOLD SWEEP */
+
+.survey-sweep-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.survey-sweep-top svg {
+    width: 100%;
+    height: 140px;
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.45));
+}
+
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+
+    .survey-subtext {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
 
     .survey-header {
         flex-direction: column;
@@ -1018,5 +1041,9 @@ body {
 
     .footer-text {
         text-align: center;
+    }
+
+     .survey-footer img {
+        width: 220px;
     }
 }
