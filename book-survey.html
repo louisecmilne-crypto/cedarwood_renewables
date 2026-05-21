@@ -56,10 +56,8 @@
 
         <div class="survey-form-card">
 
-            <form action="mailto:cedarwoodrenewables@outlook.com"
-                  method="POST"
-                  enctype="text/plain">
-                  
+            <form>
+
                 <div class="survey-grid">
 
                     <div class="form-group">
@@ -169,6 +167,38 @@
     </div>
 
 </footer>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const fullName = document.querySelector('input[placeholder="Your full name"]').value;
+    const email = document.querySelector('input[placeholder="Your email address"]').value;
+    const phone = document.querySelector('input[placeholder="Your phone number"]').value;
+    const postcode = document.querySelector('input[placeholder="Your postcode"]').value;
+    const service = document.querySelector("select").value;
+    const message = document.querySelector("textarea").value;
+
+    const subject = "New Survey Request - CedarWood Renewables";
+
+    const body =
+`Full Name: ${fullName}
+
+Email Address: ${email}
+
+Phone Number: ${phone}
+
+Postcode: ${postcode}
+
+Service Interested In: ${service}
+
+Additional Information:
+${message}`;
+
+    window.location.href =
+`mailto:cedarwoodrenewables@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+</script>
 
 </body>
 
