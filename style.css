@@ -330,6 +330,51 @@ body {
     opacity: 0.16;
     filter: blur(14px);
 }
+
+/* DESKTOP ONLY */
+.hero-sweep-desktop {
+    display: block;
+}
+
+.hero-sweep-mobile {
+    display: none;
+}
+
+/* MOBILE SWEEP */
+@media (max-width: 1000px) {
+
+.hero-sweep-desktop {
+    display: none;
+}
+
+.hero-sweep-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.hero-sweep-mobile svg {
+    width: 100%;
+    height: 180px;
+}
+
+.hero-line-mobile {
+    stroke-width: 3;
+
+    filter:
+        drop-shadow(0 0 4px rgba(255,220,120,0.45))
+        drop-shadow(0 0 14px rgba(212,175,55,0.28));
+}
+
+.hero-glow-mobile {
+    stroke-width: 22;
+    opacity: 0.14;
+    filter: blur(12px);
+}
 }
 
 /* =========================
