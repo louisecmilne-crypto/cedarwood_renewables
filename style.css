@@ -886,6 +886,13 @@ body {
     color: white;
     font-size: 1rem;
     outline: none;
+    background-color: #0b0d10;
+    appearance: none;
+}
+
+.form-group select option {
+    background-color: #0b0d10;
+    color: #ffffff;
 }
 
 .form-group textarea {
