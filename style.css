@@ -322,12 +322,13 @@ body {
 }
 
 .hero-line {
-    stroke-width: 4;
+    stroke-width: 3;
 }
 
 .hero-glow {
-    stroke-width: 34;
-    opacity: 0.22;
+    stroke-width: 24;
+    opacity: 0.16;
+    filter: blur(14px);
 }
 }
 
