@@ -1014,7 +1014,6 @@ body {
     }
 
     .survey-header {
-        flex-direction: column;
         gap: 20px;
         text-align: center;
     }
@@ -1062,26 +1061,20 @@ body {
 @media (max-width: 992px) {
 
     .about-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 40px;
         text-align: center;
-        gap: 2rem;
     }
 
     .about-image {
         width: 100%;
         max-width: 700px;
-    }
-
-    .about-image img {
-        width: 100%;
-        height: auto;
-        display: block;
+        margin: 0 auto;
     }
 
     .about-content {
-        width: 100%;
         max-width: 700px;
+        margin: 0 auto;
     }
 
     .about-content h2 {
@@ -1090,15 +1083,11 @@ body {
     }
 
     .about-content p {
-        font-size: 1.1rem;
-        line-height: 1.8;
+        max-width: 100%;
     }
+}
 
-    .about-btn {
-        display: inline-block;
-    }
-
-    @media (max-width: 576px) {
+@media (max-width: 576px) {
 
     .about-section {
         padding: 4rem 1.5rem;
@@ -1110,5 +1099,6 @@ body {
 
     .about-content p {
         font-size: 1rem;
+        line-height: 1.8;
     }
 }
