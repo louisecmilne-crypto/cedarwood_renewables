@@ -483,10 +483,54 @@
     </div>
 </section>
 
-<div class="section-sweep">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,60 C300,0 1140,120 1440,60 L1440,120 L0,120 Z"></path>
+<div class="cta-sweep">
+
+    <svg viewBox="0 0 1440 180"
+         preserveAspectRatio="none">
+
+        <defs>
+
+            <linearGradient
+                id="ctaGold"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%">
+
+                <stop offset="0%"
+                      stop-color="#8d6b12"/>
+
+                <stop offset="50%"
+                      stop-color="#d4af37"/>
+
+                <stop offset="100%"
+                      stop-color="#8d6b12"/>
+
+            </linearGradient>
+
+        </defs>
+
+        <path
+            class="services-glow"
+            d="M0,120
+               C260,60 500,160 760,90
+               C1040,20 1220,150 1440,100"
+            fill="none"
+            stroke="url(#ctaGold)"
+        />
+
+        <path
+            class="services-line"
+            d="M0,120
+               C260,60 500,160 760,90
+               C1040,20 1220,150 1440,100"
+            fill="none"
+            stroke="url(#ctaGold)"
+            stroke-linecap="round"
+        />
+
     </svg>
+
 </div>
 
 <section class="cta-section">
