@@ -1177,17 +1177,17 @@ body {
 
 .projects-btn {
     display: inline-block;
-    margin-top: 60px;
-    padding: 18px 45px;
-    border: 1px solid #d4af37;
-    color: #d4af37;
+    padding: 14px 32px;
+    border: 1px solid var(--gold);
+    border-radius: 40px;
+    color: var(--gold);
     text-decoration: none;
-    border-radius: 12px;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .projects-btn:hover {
-    background: #d4af37;
+    background: var(--gold);
     color: #000;
 }
 
