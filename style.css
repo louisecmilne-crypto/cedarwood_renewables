@@ -1633,9 +1633,9 @@ body {
 }
 
 .projects-grid .container {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 30px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
 }
 
 .project-page-card {
@@ -1661,4 +1661,8 @@ body {
 
 .project-page-content p {
     color: var(--text-light);
+}
+
+.project-page-card {
+    min-width: 0;
 }
