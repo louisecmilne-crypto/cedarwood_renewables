@@ -6,11 +6,11 @@
 
 :root {
 
-    --gold: var(--gold);
-    --green: var(--green);
+    --gold: #D4AF37;
+    --green: #5B7354;
     --cream: #F5F1E8;
 
-    --bg-dark: var(--bg-dark);
+    --bg-dark: #040608;
     --bg-darker: #020304;
     --bg-card: #0B0D10;
 
