@@ -1633,9 +1633,9 @@ body {
 }
 
 .projects-grid .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
 }
 
 .project-page-card {
