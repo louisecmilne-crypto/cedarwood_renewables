@@ -1636,6 +1636,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
+
+    width: min(1400px, 90%);
+    margin: 0 auto;
 }
 
 .project-page-card {
