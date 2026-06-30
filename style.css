@@ -1628,11 +1628,11 @@ body {
     color: #000;
 }
 
-.projects-grid {
+.projects-page-grid {
     padding-bottom: 120px;
 }
 
-.projects-grid .container {
+.projects-page-grid .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
