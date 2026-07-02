@@ -1590,12 +1590,12 @@ body {
 }
 
 .projects-page-hero {
-    padding: 100px 0 70px;
+    padding: 70px 0 70px;
     text-align: center;
 }
 
-.projects-hero h1 {
-    font-size: 4rem;
+.projects-page-hero h1 {
+    font-size: clamp(3rem, 6vw, 4.8rem);
     margin: 20px 0;
 }
 
@@ -1676,4 +1676,14 @@ body {
 
 .nav a.active {
     color: var(--gold);
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:50px;
+    color:var(--gold);
+    letter-spacing:2px;
+    font-size:.8rem;
 }
