@@ -1585,7 +1585,11 @@ body {
    PROJECTS PAGE
 ==================================== */
 
-.projects-hero {
+.projects-page-grid {
+    padding-bottom: 120px;
+}
+
+.projects-page-hero {
     padding: 140px 0 80px;
     text-align: center;
 }
@@ -1668,4 +1672,8 @@ body {
 
 .project-page-card {
     min-width: 0;
+}
+
+.nav a.active {
+    color: var(--gold);
 }
