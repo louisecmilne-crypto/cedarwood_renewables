@@ -1928,7 +1928,8 @@ body {
 
     background:#050505;
 
-    padding:90px 0 40px;
+    padding: 80px 0 30px;
+    margin-top: 40px;
 
     position:relative;
 
@@ -1952,17 +1953,23 @@ body {
 
 }
 
+.footer-logo{
+    width:240px;
+    height:auto;
+    margin-bottom:20px;
+}
+
 .footer-tagline{
 
     color:var(--gold);
 
-    letter-spacing:5px;
+    letter-spacing:6px;
 
     text-transform:uppercase;
 
-    font-size:.85rem;
+    font-size:.8rem;
 
-    margin-bottom:20px;
+    margin:18px 0 30px;
 
 }
 
@@ -1973,6 +1980,55 @@ body {
     line-height:1.8;
 
     font-size:1.05rem;
+
+}
+
+.footer-column h4{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    margin-bottom:22px;
+
+    font-weight:600;
+}
+
+.footer-column a{
+
+    position:relative;
+
+    transition:.35s ease;
+
+}
+
+.footer-column a::after{
+
+    content:"→";
+
+    opacity:0;
+
+    margin-left:6px;
+
+    transition:.35s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--gold);
+
+    padding-left:8px;
+
+}
+
+.footer-column a:hover::after{
+
+    opacity:1;
 
 }
 
@@ -2065,10 +2121,11 @@ body {
 
     border-top:1px solid rgba(212,175,55,.15);
 
-    color:rgba(255,255,255,.45);
+    color:#8a8a8a;
 
     font-size:.9rem;
 
+    letter-spacing:.4px;
 }
 
 .footer{
@@ -2082,5 +2139,40 @@ body {
     animation-timeline:view();
 
     animation-range:entry 10% cover 35%;
+
+}
+
+.footer{
+
+    border-top:1px solid rgba(201,166,62,.25);
+
+    position:relative;
+
+}
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-1px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:420px;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(212,175,55,.95),
+        transparent
+    );
+
+    filter:blur(.8px);
 
 }
