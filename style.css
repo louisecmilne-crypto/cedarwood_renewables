@@ -1595,11 +1595,12 @@ body {
 }
 
 .projects-page-hero h1 {
-    font-size: clamp(3.8rem, 7vw, 5.4rem);
-    line-height: 1.05;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin: 25px 0;
+    font-size: clamp(3rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: 20px 0;
+    color: #ECE4D8;
 }
 
 .projects-page-hero p {
