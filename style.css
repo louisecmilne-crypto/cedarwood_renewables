@@ -1597,15 +1597,15 @@ body {
 .projects-page-hero h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: clamp(3.3rem,5vw,4.4rem);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.05;
     letter-spacing:-0.5px;
 
     background: linear-gradient(
-        180deg,
-        #F3EEE4 0%,
-        #E6DDD0 60%,
-        #7F9674 100%
+    180deg,
+    #F2ECE3 0%,
+    #E8DED1 70%,
+    #BAC7B2 100%
     );
 
     -webkit-background-clip: text;
