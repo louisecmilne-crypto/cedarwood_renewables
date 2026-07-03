@@ -1597,15 +1597,15 @@ body {
 .projects-page-hero h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: clamp(3.3rem,5vw,4.4rem);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.05;
     letter-spacing:-0.5px;
 
     background: linear-gradient(
     180deg,
     #F2ECE3 0%,
-    #E8DED1 70%,
-    #BAC7B2 100%
+    #EEE7DC 75%,
+    #C9D4C0 100%
     );
 
     -webkit-background-clip: text;
@@ -1613,14 +1613,16 @@ body {
     background-clip: text;
 }
 
-.projects-page-hero p {
-    max-width: 760px;
-    margin: 35px auto 0;
-    font-size: 1.15rem;
-    line-height: 1.9;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-    color: rgba(255,255,255,0.78);
+.projects-hero p{
+    max-width:720px;
+    margin:45px auto 0;
+
+    font-size:1.1rem;
+    line-height:2;
+
+    color:rgba(255,255,255,.68);
+
+    font-weight:300;
 }
 
 .project-filters {
