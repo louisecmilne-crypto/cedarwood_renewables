@@ -1600,7 +1600,17 @@ body {
     font-weight: 600;
     letter-spacing: -1px;
     margin: 20px 0;
-    color: #ECE4D8;
+
+    background: linear-gradient(
+        180deg,
+        #F3EEE4 0%,
+        #E6DDD0 60%,
+        #7F9674 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .projects-page-hero p {
