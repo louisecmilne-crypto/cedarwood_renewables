@@ -2754,21 +2754,22 @@ body {
         box-sizing: border-box;
     }
 
-    /* -----------------------------------------------------
-       FOOTER
-    ----------------------------------------------------- */
+   /* -----------------------------------------------------
+   FOOTER
+----------------------------------------------------- */
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        padding: 60px 25px;
-        gap: 45px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+.footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 45px 20px 35px;
+    gap: 35px 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-    .footer-brand {
-        text-align: center;
-    }
+.footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 
     .footer-brand img {
         width: 220px;
