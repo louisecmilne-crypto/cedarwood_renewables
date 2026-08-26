@@ -1537,7 +1537,7 @@ body {
 }
 
 .footer-container {
-    padding: 80px 6%;
+    padding: 55px 6% 35px;
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
