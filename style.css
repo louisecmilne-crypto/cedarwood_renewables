@@ -1484,7 +1484,7 @@ body {
 
 .cta-section {
     background: var(--bg-dark);
-    padding: 120px 6%;
+    padding: 100px 6% 60px;
     text-align: center;
 }
 
