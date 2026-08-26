@@ -2401,3 +2401,275 @@ body {
         text-align: center;
     }
 }
+
+/* =========================================================
+   CEDARWOOD CTA ACTIONS — PREMIUM VERSION
+   ========================================================= */
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+
+/* ---------------------------------------------------------
+   BOOK A FREE SURVEY
+   --------------------------------------------------------- */
+
+.cta-actions .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-width: 260px;
+    min-height: 58px;
+
+    padding: 0 28px;
+
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b8901d
+    );
+
+    color: #080b09;
+    text-decoration: none;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 0 0 rgba(212, 175, 55, 0),
+        0 8px 25px rgba(212, 175, 55, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.cta-actions .cta-btn span {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.cta-actions .cta-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(212, 175, 55, 0.18),
+        0 12px 30px rgba(212, 175, 55, 0.15);
+}
+
+.cta-actions .cta-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   WHATSAPP BUTTON
+   --------------------------------------------------------- */
+
+.cta-whatsapp {
+    display: inline-flex;
+    align-items: center;
+
+    min-width: 330px;
+    min-height: 58px;
+
+    padding: 7px 18px 7px 8px;
+
+    border: 1px solid rgba(82, 142, 83, 0.65);
+    border-radius: 8px;
+
+    background: rgba(5, 22, 13, 0.72);
+
+    color: #f5f1e8;
+    text-decoration: none;
+
+    box-shadow:
+        0 0 0 rgba(82, 142, 83, 0);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.cta-whatsapp:hover {
+    transform: translateY(-3px);
+
+    border-color: #6d9f6d;
+
+    background: rgba(7, 28, 17, 0.9);
+
+    box-shadow:
+        0 0 25px rgba(82, 142, 83, 0.12);
+}
+
+
+/* ---------------------------------------------------------
+   WHATSAPP ICON CIRCLE
+   --------------------------------------------------------- */
+
+.cta-whatsapp-icon {
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #315f39;
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+
+    box-shadow:
+        inset 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-whatsapp-icon svg {
+    width: 23px;
+    height: 23px;
+
+    fill: #d4af37;
+}
+
+
+/* ---------------------------------------------------------
+   WHATSAPP TEXT
+   --------------------------------------------------------- */
+
+.cta-whatsapp-content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    margin-left: 13px;
+    flex: 1;
+}
+
+.cta-whatsapp-content strong {
+    color: #d4af37;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.cta-whatsapp-content small {
+    margin-top: 4px;
+
+    color: #c9c9c2;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------------------------------------------------------
+   WHATSAPP ARROW
+   --------------------------------------------------------- */
+
+.cta-whatsapp-arrow {
+    margin-left: 12px;
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    transition: transform 0.3s ease;
+}
+
+.cta-whatsapp:hover .cta-whatsapp-arrow {
+    transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   SMALL SUPPORTING LINE
+   --------------------------------------------------------- */
+
+.cta-contact-note {
+    margin-top: 17px;
+
+    color: rgba(180, 180, 170, 0.72);
+
+    font-size: 12px;
+    letter-spacing: 0.6px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .cta-actions {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 14px;
+
+        margin-top: 30px;
+    }
+
+    .cta-actions .cta-btn,
+    .cta-whatsapp {
+        width: min(100%, 360px);
+
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .cta-actions .cta-btn {
+        min-height: 56px;
+    }
+
+    .cta-whatsapp {
+        min-height: 56px;
+    }
+
+    .cta-whatsapp-icon {
+        width: 42px;
+        height: 42px;
+
+        flex-basis: 42px;
+    }
+
+    .cta-whatsapp-content strong {
+        font-size: 12px;
+    }
+
+    .cta-whatsapp-content small {
+        font-size: 11px;
+    }
+
+    .cta-contact-note {
+        padding: 0 20px;
+
+        line-height: 1.6;
+    }
+
+}
