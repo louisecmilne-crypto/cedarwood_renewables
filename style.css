@@ -2794,6 +2794,16 @@ body {
         overflow-wrap: anywhere;
     }
 
+    .footer-column:last-child {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.footer-column:last-child a {
+    display: inline-block;
+    max-width: 100%;
+}
+
     .footer-bottom {
         padding: 22px 20px;
         line-height: 1.6;
