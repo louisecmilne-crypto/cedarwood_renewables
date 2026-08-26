@@ -2854,4 +2854,8 @@ body {
         filter: blur(14px);
     }
 
+    .services-sweep {
+    display: none;
+}
+
 }
