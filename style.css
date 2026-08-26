@@ -2834,15 +2834,15 @@ body {
         height: 100%;
     }
 
-   .mobile-gold-curve-line {
+    .mobile-gold-curve-line {
         fill: none;
         stroke: #d4af37;
         stroke-width: 2.5;
         stroke-linecap: round;
 
-    filter:
-        drop-shadow(0 0 5px rgba(255,220,120,0.5))
-        drop-shadow(0 0 18px rgba(212,175,55,0.35));
+        filter:
+            drop-shadow(0 0 5px rgba(255,220,120,0.5))
+            drop-shadow(0 0 18px rgba(212,175,55,0.35));
     }
 
     .mobile-gold-curve-glow {
@@ -2854,8 +2854,13 @@ body {
         filter: blur(14px);
     }
 
+    .services {
+        padding-bottom: 90px;
+    }
+
+    /* Hide the old desktop sweep on mobile */
     .services-sweep {
-    display: none;
-}
+        display: none;
+    }
 
 }
