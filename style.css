@@ -2833,24 +2833,24 @@ body {
         height: 100%;
     }
 
-    .mobile-gold-curve-line {
+   .mobile-gold-curve-line {
         fill: none;
         stroke: #d4af37;
-        stroke-width: 2.5;
+        stroke-width: 3;
         stroke-linecap: round;
 
-        filter:
-            drop-shadow(0 0 4px rgba(212,175,55,0.75))
-            drop-shadow(0 0 12px rgba(212,175,55,0.45));
+    filter:
+        drop-shadow(0 0 5px rgba(255,220,120,0.5))
+        drop-shadow(0 0 18px rgba(212,175,55,0.35));
     }
 
     .mobile-gold-curve-glow {
         fill: none;
         stroke: #d4af37;
-        stroke-width: 12;
+        stroke-width: 18;
         stroke-linecap: round;
         opacity: 0.18;
-        filter: blur(7px);
+        filter: blur(14px);
     }
 
 }
