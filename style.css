@@ -361,9 +361,9 @@ body {
     }
 
     .hero-glow-mobile {
-        stroke-width: 22;
-        opacity: 0.14;
-        filter: blur(12px);
+        stroke-width: 10;
+        opacity: 0.12;
+        filter: blur(5px);
     }
 }
 
