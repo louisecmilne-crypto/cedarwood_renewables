@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-  <style>
     /* Services page header sizing */
     .header .logo{width:180px;max-width:60%;height:auto}
     .header .logo-container{margin-bottom:8px}
@@ -26,7 +25,7 @@
       .header .header-btn{padding:11px 22px;font-size:.82rem}
     }
     .cw-page-hero{position:relative;min-height:390px;display:flex;align-items:center;overflow:hidden;background:#080908}
-    .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,7,5,.94),rgba(3,7,5,.78),rgba(3,7,5,.88)),url('about-install.jpg') center/cover no-repeat}
+    .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,7,5,.94),rgba(3,7,5,.78),rgba(3,7,5,.88)),url('hero.jpg') center/cover no-repeat}
     .cw-page-hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:75px 0 70px}
     .cw-eyebrow{font-family:Montserrat,sans-serif;color:#d4af37;text-transform:uppercase;letter-spacing:3px;font-size:.82rem;font-weight:700;margin-bottom:18px}
     .cw-page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,7vw,6rem);line-height:.92;color:#fff;margin:0 0 24px}
@@ -70,6 +69,17 @@
     .cw-btn-secondary{border:1px solid rgba(212,175,55,.5);color:#d4af37}
     @media(max-width:850px){.cw-service-grid,.cw-package-grid{grid-template-columns:1fr}.cw-service-feature{min-height:220px}}
     @media(max-width:600px){.cw-page-hero{min-height:330px}.cw-page-hero-inner{padding:60px 0 55px}.cw-page-hero h1{font-size:3.5rem}.cw-service-feature{display:block}.cw-service-image{width:100%;height:190px}.cw-service-body{padding:25px}.cw-care{margin-top:75px}.cw-services-wrap{padding:65px 0}}
+
+    .services-page-footer .footer-container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;padding:55px 6% 35px}
+    .services-page-footer{background:#020304;border-top:1px solid rgba(212,175,55,.12)}
+    .services-page-footer .footer-brand img{width:180px;max-width:100%;margin-bottom:18px}
+    .services-page-footer .footer-brand p{color:#d0d0d0;line-height:1.8;margin:0}
+    .services-page-footer .footer-column h3{color:#d4af37;margin:0 0 18px;font-family:Montserrat,sans-serif;font-size:1rem}
+    .services-page-footer .footer-column a{display:block;color:#d0d0d0;text-decoration:none;margin-bottom:11px;transition:.2s ease}
+    .services-page-footer .footer-column a:hover{color:#d4af37}
+    .services-page-footer .footer-bottom{text-align:center;padding:22px;border-top:1px solid rgba(212,175,55,.08);color:#777}
+    @media(max-width:850px){.services-page-footer .footer-container{grid-template-columns:1fr 1fr;gap:32px}}
+    @media(max-width:600px){.services-page-footer .footer-container{grid-template-columns:1fr;text-align:center}.services-page-footer .footer-brand img{margin-left:auto;margin-right:auto}}
   </style>
 </head>
 <body>
@@ -200,7 +210,7 @@
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer services-page-footer">
   <div class="footer-container">
     <div class="footer-brand">
       <img src="premium-logo.png" alt="CedarWood Renewables">
