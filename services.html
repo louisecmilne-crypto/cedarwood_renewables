@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | CedarWood Renewables</title>
+  <meta name="description" content="CedarWood Renewables provides Solar PV, Battery Storage, EV Charging, Heat Pumps, Air Conditioning, Solar Panel Cleaning, Bird Guard Installation and Home Improvement services across Essex.">
+  <meta name="keywords" content="solar PV Essex, battery storage Essex, EV charging Essex, heat pumps Essex, air conditioning Essex, solar panel cleaning Essex, CedarWood Renewables">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    .cw-page-hero{position:relative;min-height:55vh;display:flex;align-items:center;overflow:hidden;background:#080908}
+    .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,6,.92),rgba(5,8,6,.58),rgba(5,8,6,.72)),url('hero.jpg') center/cover no-repeat}
+    .cw-page-hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:130px 0 100px}
+    .cw-eyebrow{font-family:Montserrat,sans-serif;color:#d4af37;text-transform:uppercase;letter-spacing:3px;font-size:.82rem;font-weight:700;margin-bottom:18px}
+    .cw-page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,7vw,6rem);line-height:.92;color:#fff;margin:0 0 24px}
+    .cw-page-hero h1 span{color:#c8a63d}
+    .cw-page-hero p{max-width:680px;color:#d9dfd5;font-size:1.08rem;line-height:1.8;margin:0}
+    .cw-services-wrap{background:#080908;padding:90px 0}
+    .cw-services-inner{width:min(1180px,92%);margin:0 auto}
+    .cw-intro{text-align:center;max-width:800px;margin:0 auto 58px}
+    .cw-intro h2,.cw-care-heading h2{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(2.5rem,5vw,4rem);margin:0 0 15px}
+    .cw-intro h2 span,.cw-care-heading h2 span{color:#c8a63d}
+    .cw-intro p,.cw-care-heading p{color:#bfc7b7;line-height:1.8;margin:0}
+    .cw-service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+    .cw-service-feature{display:flex;min-height:245px;background:linear-gradient(145deg,rgba(18,21,18,.98),rgba(8,9,8,.98));border:1px solid rgba(212,175,55,.15);border-radius:22px;overflow:hidden;transition:.35s ease;box-shadow:0 14px 35px rgba(0,0,0,.25)}
+    .cw-service-feature:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.42);box-shadow:0 22px 50px rgba(0,0,0,.45)}
+    .cw-service-image{width:42%;min-width:42%;background:#101310}
+    .cw-service-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .cw-service-body{padding:28px 27px}
+    .cw-service-icon{color:#d4af37;font-size:30px;margin-bottom:12px}
+    .cw-service-body h3{font-family:'Cormorant Garamond',serif;color:#fff;font-size:2rem;margin:0 0 10px}
+    .cw-service-body p{color:#bfc7b7;line-height:1.7;margin:0 0 16px;font-size:.95rem}
+    .cw-service-link{color:#d4af37;text-decoration:none;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:1.2px}
+    .cw-service-link:hover{color:#f0cf63}
+    .cw-care{margin-top:105px}
+    .cw-care-heading{text-align:center;max-width:780px;margin:0 auto 45px}
+    .cw-package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+    .cw-package-card{position:relative;background:linear-gradient(160deg,rgba(18,21,18,.98),rgba(7,8,7,1));border:1px solid rgba(212,175,55,.16);border-radius:22px;padding:35px 30px;overflow:hidden}
+    .cw-package-card:after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,#d4af37,transparent)}
+    .cw-package-card.gold{border-color:rgba(212,175,55,.48);box-shadow:0 18px 50px rgba(212,175,55,.08)}
+    .cw-package-card h3{font-family:'Cormorant Garamond',serif;color:#fff;font-size:2.25rem;margin:0 0 4px}
+    .cw-package-card .tag{color:#d4af37;font-size:.76rem;letter-spacing:1.8px;text-transform:uppercase;font-weight:700;margin-bottom:22px}
+    .cw-package-card ul{list-style:none;padding:0;margin:0}
+    .cw-package-card li{position:relative;color:#c7cec4;line-height:1.65;padding:9px 0 9px 23px;border-bottom:1px solid rgba(255,255,255,.05)}
+    .cw-package-card li:before{content:"✓";position:absolute;left:0;color:#d4af37;font-weight:700}
+    .cw-package-note{text-align:center;color:#899286;font-size:.9rem;margin:25px auto 0;max-width:800px}
+    .cw-cta{margin-top:80px;text-align:center;padding:55px 30px;border:1px solid rgba(212,175,55,.18);border-radius:25px;background:radial-gradient(circle at 50% 0,rgba(212,175,55,.09),transparent 55%),#0d100d}
+    .cw-cta h2{font-family:'Cormorant Garamond',serif;color:#fff;font-size:clamp(2.3rem,5vw,3.7rem);margin:0 0 12px}
+    .cw-cta p{color:#bfc7b7;line-height:1.7;margin:0 auto 25px;max-width:700px}
+    .cw-actions{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+    .cw-btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:700;letter-spacing:.6px}
+    .cw-btn-primary{background:#d4af37;color:#10110f}
+    .cw-btn-secondary{border:1px solid rgba(212,175,55,.5);color:#d4af37}
+    @media(max-width:850px){.cw-service-grid,.cw-package-grid{grid-template-columns:1fr}.cw-service-feature{min-height:220px}}
+    @media(max-width:600px){.cw-page-hero-inner{padding:105px 0 75px}.cw-page-hero h1{font-size:3.5rem}.cw-service-feature{display:block}.cw-service-image{width:100%;height:190px}.cw-service-body{padding:25px}.cw-care{margin-top:75px}.cw-services-wrap{padding:65px 0}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link"><img src="premium-logo.png" alt="CedarWood Renewables"></a>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="services.html" class="active">SERVICES</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="index.html#contact">CONTACT</a>
+      <a href="book-survey.html" class="nav-cta">BOOK A SURVEY</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cw-page-hero">
+    <div class="cw-page-hero-inner">
+      <div class="cw-eyebrow">CedarWood Renewables</div>
+      <h1>Our <span>Services</span></h1>
+      <p>Complete renewable energy, home improvement and ongoing maintenance solutions — from installation through to long-term care and support.</p>
+    </div>
+  </section>
+
+  <section class="cw-services-wrap">
+    <div class="cw-services-inner">
+      <div class="cw-intro">
+        <h2>Complete Solutions. <span>Ongoing Support.</span></h2>
+        <p>We bring renewable technology, property care and maintenance together so your home and systems can be looked after properly, not just installed and forgotten.</p>
+      </div>
+
+      <div class="cw-service-grid">
+        <article class="cw-service-feature">
+          <div class="cw-service-image"><img src="about-install.jpg" alt="Solar PV installation by CedarWood Renewables" loading="lazy"></div>
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-solar-panel"></i></div><h3>Solar PV</h3><p>Solar panel systems designed around your property and energy needs, with quality products and professional installation.</p><a class="cw-service-link" href="solar.html">Explore Solar PV →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-image"><img src="images/projects/battery-storage.jpg" alt="Battery storage system" loading="lazy"></div>
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-battery-half"></i></div><h3>Battery Storage</h3><p>Store more of the energy your solar system generates and make greater use of your renewable energy throughout the day and evening.</p><a class="cw-service-link" href="battery-storage.html">Explore Battery Storage →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-charging-station"></i></div><h3>EV Charging</h3><p>Home EV charging solutions designed to make charging your vehicle simple, convenient and integrated with your home's energy setup.</p><a class="cw-service-link" href="ev-charging.html">Explore EV Charging →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div><h3>Heat Pumps</h3><p>Efficient heating solutions for homeowners looking to improve comfort while making better use of modern renewable technology.</p><a class="cw-service-link" href="index.html#services">Ask About Heat Pumps →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-image"><img src="images/projects/air-conditioning.jpg" alt="Air conditioning service" loading="lazy"></div>
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-snowflake"></i></div><h3>Air Conditioning</h3><p>Air conditioning installation, servicing and maintenance, including filter cleaning and ongoing system care.</p><a class="cw-service-link" href="air-conditioning.html">Explore Air Conditioning →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-image"><img src="images/projects/solar-cleaning.jpg" alt="Solar panel cleaning and maintenance" loading="lazy"></div>
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div><h3>Solar Panel Cleaning</h3><p>Professional panel cleaning and maintenance to help keep your system clean, cared for and operating as it should.</p><a class="cw-service-link" href="services.html#care-packages">See Care Packages →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-shield-dog"></i></div><h3>Bird Guard Installation</h3><p>Protect your solar investment with bird guard installation designed to help prevent nesting and debris building up beneath panels.</p><a class="cw-service-link" href="index.html#services">Ask About Bird Guarding →</a></div>
+        </article>
+
+        <article class="cw-service-feature">
+          <div class="cw-service-body"><div class="cw-service-icon"><i class="fa-solid fa-house-chimney"></i></div><h3>Home Improvements</h3><p>Practical home improvement and aftercare services for homeowners who want one trusted team looking after their property.</p><a class="cw-service-link" href="services.html#care-packages">View Home Care →</a></div>
+        </article>
+      </div>
+
+      <section class="cw-care" id="care-packages">
+        <div class="cw-care-heading">
+          <div class="cw-eyebrow">Ongoing Support</div>
+          <h2>System Care <span>Packages</span></h2>
+          <p>Simple care options for existing solar homeowners. Choose the level of ongoing maintenance and support that suits your property and system.</p>
+        </div>
+
+        <div class="cw-package-grid">
+          <article class="cw-package-card">
+            <h3>Bronze</h3><div class="tag">Essential Care</div>
+            <ul>
+              <li>System condition check</li>
+              <li>Performance readings</li>
+              <li>Visual inspection</li>
+              <li>Maintenance recommendations</li>
+            </ul>
+          </article>
+
+          <article class="cw-package-card">
+            <h3>Silver</h3><div class="tag">Complete Care</div>
+            <ul>
+              <li>Everything included in Bronze</li>
+              <li>Full system check and readings</li>
+              <li>Solar panel cleaning</li>
+              <li>Gutter cleaning</li>
+              <li>Property-wide safety inspection</li>
+            </ul>
+          </article>
+
+          <article class="cw-package-card gold">
+            <h3>Gold</h3><div class="tag">Complete Protection</div>
+            <ul>
+              <li>Everything included in Silver</li>
+              <li>4–6 visits/checks per year</li>
+              <li>Full system performance monitoring</li>
+              <li>Panel cleaning and ceramic coating</li>
+              <li>Ceramic coating twice yearly</li>
+              <li>Full property safety inspection</li>
+              <li>Ongoing maintenance recommendations</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="cw-package-note">Package pricing can be tailored to the property and system size, keeping the service straightforward while allowing for different system requirements.</p>
+      </section>
+
+      <section class="cw-cta">
+        <h2>Looking After Your Investment</h2>
+        <p>Whether you are considering renewable technology or already have a system installed, CedarWood Renewables can help with installation, maintenance and ongoing support.</p>
+        <div class="cw-actions">
+          <a class="cw-btn cw-btn-primary" href="book-survey.html">Book a Survey</a>
+          <a class="cw-btn cw-btn-secondary" href="https://wa.me/447724513583?text=Hi%20CedarWood%20Renewables%2C%20I'd%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="premium-logo.png" alt="CedarWood Renewables"><p>Powering a Greener Future</p></div>
+    <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="index.html#about">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="book-survey.html">Book a Survey</a></div>
+    <div class="footer-links"><h4>Services</h4><a href="solar.html">Solar PV</a><a href="battery-storage.html">Battery Storage</a><a href="ev-charging.html">EV Charging</a><a href="services.html#care-packages">System Care Packages</a></div>
+    <div class="footer-contact"><h4>Contact</h4><a href="tel:07724513583">07724 513583</a><a href="mailto:cedarwoodrenewables@outlook.com">cedarwoodrenewables@outlook.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
