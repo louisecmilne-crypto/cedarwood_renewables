@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-    .cw-page-hero{position:relative;min-height:55vh;display:flex;align-items:center;overflow:hidden;background:#080908}
-    .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,6,.92),rgba(5,8,6,.58),rgba(5,8,6,.72)),url('hero.jpg') center/cover no-repeat}
-    .cw-page-hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:130px 0 100px}
+    .cw-page-hero{position:relative;min-height:390px;display:flex;align-items:center;overflow:hidden;background:#080908}
+    .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,7,5,.94),rgba(3,7,5,.78),rgba(3,7,5,.88)),url('about-install.jpg') center/cover no-repeat}
+    .cw-page-hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:75px 0 70px}
     .cw-eyebrow{font-family:Montserrat,sans-serif;color:#d4af37;text-transform:uppercase;letter-spacing:3px;font-size:.82rem;font-weight:700;margin-bottom:18px}
     .cw-page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,7vw,6rem);line-height:.92;color:#fff;margin:0 0 24px}
     .cw-page-hero h1 span{color:#c8a63d}
@@ -57,23 +57,23 @@
     .cw-btn-primary{background:#d4af37;color:#10110f}
     .cw-btn-secondary{border:1px solid rgba(212,175,55,.5);color:#d4af37}
     @media(max-width:850px){.cw-service-grid,.cw-package-grid{grid-template-columns:1fr}.cw-service-feature{min-height:220px}}
-    @media(max-width:600px){.cw-page-hero-inner{padding:105px 0 75px}.cw-page-hero h1{font-size:3.5rem}.cw-service-feature{display:block}.cw-service-image{width:100%;height:190px}.cw-service-body{padding:25px}.cw-care{margin-top:75px}.cw-services-wrap{padding:65px 0}}
+    @media(max-width:600px){.cw-page-hero{min-height:330px}.cw-page-hero-inner{padding:60px 0 55px}.cw-page-hero h1{font-size:3.5rem}.cw-service-feature{display:block}.cw-service-image{width:100%;height:190px}.cw-service-body{padding:25px}.cw-care{margin-top:75px}.cw-services-wrap{padding:65px 0}}
   </style>
 </head>
 <body>
 
 <header class="header">
-  <div class="header-inner">
-    <a href="index.html" class="logo-link"><img src="premium-logo.png" alt="CedarWood Renewables"></a>
-    <nav class="nav">
-      <a href="index.html">HOME</a>
-      <a href="index.html#about">ABOUT</a>
-      <a href="services.html" class="active">SERVICES</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="index.html#contact">CONTACT</a>
-      <a href="book-survey.html" class="nav-cta">BOOK A SURVEY</a>
-    </nav>
+  <div class="logo-container">
+    <a href="index.html"><img src="premium-logo.png" alt="CedarWood Renewables" class="logo"></a>
   </div>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="index.html#about">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="index.html#contact">CONTACT</a>
+  </nav>
+  <a href="book-survey.html" class="header-btn">BOOK A SURVEY</a>
 </header>
 
 <main>
