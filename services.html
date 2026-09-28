@@ -13,6 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
+  <style>
+    /* Services page header sizing */
+    .header .logo{width:180px;max-width:60%;height:auto}
+    .header .logo-container{margin-bottom:8px}
+    .header .nav{gap:38px;margin-top:6px;margin-bottom:16px}
+    .header{padding:12px 8% 10px}
+    @media(max-width:768px){
+      .header .logo{width:150px;max-width:65%}
+      .header .nav{gap:18px;margin-bottom:14px}
+      .header .nav a{font-size:.78rem}
+      .header .header-btn{padding:11px 22px;font-size:.82rem}
+    }
     .cw-page-hero{position:relative;min-height:390px;display:flex;align-items:center;overflow:hidden;background:#080908}
     .cw-page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,7,5,.94),rgba(3,7,5,.78),rgba(3,7,5,.88)),url('about-install.jpg') center/cover no-repeat}
     .cw-page-hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;padding:75px 0 70px}
